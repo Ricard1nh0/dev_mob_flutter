@@ -104,7 +104,7 @@ class _IMCCalculatorScreenState extends State<IMCCalculatorScreen> {
       appBar: AppBar(
         title: const Text('Calculadora de IMC'),
         centerTitle: true,
-        backgroundColor: Colors.indigo,
+        backgroundColor: Colors.blue,
         actions: [
           IconButton(
             icon: const Icon(Icons.refresh),
@@ -145,9 +145,10 @@ class _IMCCalculatorScreenState extends State<IMCCalculatorScreen> {
             ElevatedButton(
               onPressed: _calculateIMC,
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.indigo,
+                backgroundColor: Colors.blueGrey,
+                foregroundColor: Colors.white,
                 padding: const EdgeInsets.symmetric(vertical: 16.0),
-                textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold,),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12.0),
                 ),

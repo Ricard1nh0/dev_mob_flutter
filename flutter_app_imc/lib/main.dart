@@ -62,7 +62,7 @@ class _IMCCalculatorScreenState extends State<IMCCalculatorScreen> {
       _imcResult = imc;
       if (imc < 18.5) {
         _classification = 'Abaixo do peso';
-        _resultColor = Colors.orangeAccent;
+        _resultColor = const Color.fromARGB(255, 217, 147, 55);
       } else if (imc >= 18.5 && imc <= 24.9) {
         _classification = 'Peso ideal (parabéns)';
         _resultColor = Colors.green;
